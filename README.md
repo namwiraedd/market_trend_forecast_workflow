@@ -134,3 +134,14 @@ tqdm
 plotly
 pypandoc
 Note: prophet sometimes installs as prophet / cmdstanpy or fbprophet depending on environment. If install issues arise, follow Prophet install docs (it may require pystan or cmdstanpy). For a smooth path on Windows, use conda.
+Final notes & run checklist 
+
+Commit all files and push to GitHub.
+
+Drop your spreadsheets into data/raw/. Sheets will be processed into data/processed/.
+
+Run ./run_all.sh (or run_all.bat) — it will create a .venv, install packages, train and produce forecasts.
+
+Open streamlit run src/streamlit_app.py to inspect forecasts interactively.
+
+For handoff, deliver the repo link, a one-paragraph explanation of the intended periodicity, and sample input Excel files.
